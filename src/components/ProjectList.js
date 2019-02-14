@@ -1,69 +1,39 @@
 import React from 'react'
-import { Button, Icon, Image, Item, Label } from 'semantic-ui-react'
+import { Button, Icon, Image, Item, Label, Segment, Header } from 'semantic-ui-react'
+import resumeJson from '../resumeJson';
 
-const ProjectList = () => (
-   
-   
-  <Item.Group divided>
+class ProjectList extends React.Component {
 
-    <Item>
-      {/* <Item.Image src='/images/wireframe/image.png' /> */}
+  listPropjects() {
+    return resumeJson.projects.map((project, key) => {
+      return (
+        <Item key={key}>
+          <Item.Content>
+          <Segment clearing basic style={{ padding: '0em', margin: '0em'}}>
+            <Header as='h1' floated='left'>{project.name}</Header>
+            <Segment floated='right' basic style={{ padding: '1em', margin: '0em'}}>
+              <Header as='h5' disabled style={{ padding: '0em', margin: '0em'}}>
+                {project.date}
+              </Header>
+            </Segment>
+          </Segment>
+            <Item.Description>{project.description}</Item.Description>
+            <Item.Extra>
+              {project.skills.map((skill, key) => <Label key={key}>{skill}</Label>)}
+            </Item.Extra>
+          </Item.Content>
+        </Item>
+      )
+    })
+  }
 
-      <Item.Content>
-        <Item.Header as='h1'>Crypto Clicker</Item.Header>
-        <Item.Meta>
-          <span className='cinema'>Winter 2018</span>
-        </Item.Meta>
-        <Item.Description>
-        Collaborated in the design and implementation of a clicker game that utilize Coinbase API to get real time crypto currency exchange rates to enable the player to invest in virtual money. 
-        </Item.Description>
-        <Item.Extra>
-          <Label>Java</Label>
-          <Label>Android Studio</Label>
-          {/* <Label icon='globe' content='Additional Languages' /> */}
-        </Item.Extra>
-      </Item.Content>
-    </Item>
-
-    <Item>
-      {/* <Item.Image src='/images/wireframe/image.png' /> */}
-
-      <Item.Content>
-        <Item.Header as='a'>Crypto Clicker</Item.Header>
-        {/* <Item.Meta>
-          <span className='cinema'>Union Square 14</span>
-        </Item.Meta> */}
-        <Item.Description>
-        Collaborated in the design and implementation of a clicker game that utilize Coinbase API to get real time crypto currency exchange rates to enable the player to invest in virtual money. 
-        </Item.Description>
-        <Item.Extra>
-          <Label>Java</Label>
-          <Label>Android Studio</Label>
-          {/* <Label icon='globe' content='Additional Languages' /> */}
-        </Item.Extra>
-      </Item.Content>
-    </Item>
-
-    <Item>
-      {/* <Item.Image src='/images/wireframe/image.png' /> */}
-
-      <Item.Content>
-        <Item.Header as='a'>Crypto Clicker</Item.Header>
-        {/* <Item.Meta>
-          <span className='cinema'>Union Square 14</span>
-        </Item.Meta> */}
-        <Item.Description>
-        Collaborated in the design and implementation of a clicker game that utilize Coinbase API to get real time crypto currency exchange rates to enable the player to invest in virtual money. 
-        </Item.Description>
-        <Item.Extra>
-          <Label>Java</Label>
-          <Label>Android Studio</Label>
-          {/* <Label icon='globe' content='Additional Languages' /> */}
-        </Item.Extra>
-      </Item.Content>
-    </Item>
-
-  </Item.Group>
-)
+  render () { 
+    return (  
+      <Item.Group divided>
+        {this.listPropjects()}
+      </Item.Group>
+    );
+  }    
+}
 
 export default ProjectList

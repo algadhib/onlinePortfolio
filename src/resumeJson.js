@@ -22,7 +22,45 @@ const resumeData = {
    "experince": {
 
    },
-   "projects": {},
+   "projects": [
+      {
+         "name": "Crypto Clicker",
+         "date": "Winter 2018",
+         "description": "Collaborated in the design and implementation of a clicker game that utilize Coinbase API to get real time crypto currency exchange rates to enable the player to invest in virtual money.",
+         "skills": [
+            "Java",
+            "Android Studio"
+         ]
+      },
+      {
+         "name": "Atmega128 FM Clock Radio",
+         "date": "Fall 2017",
+         "description": "Programmed and built FM clock radio using Atmega128 development board and FM radio chip that uses encoders, buttons, 7-segment display, and LCD screen as a user interface.",
+         "skills": [
+            "Empidid systems programming",
+            "microcontroller communication"
+         ]
+      },
+      {
+         "name": "\"Game\"",
+         "date": "Summer 2017",
+         "description": "Contributed in a group of three in developing the backend a game platform.",
+         "skills": [
+            "JavaScript",
+            "NodeJS",
+            "web development"
+         ]
+      },
+      {
+         "name": "Blackjack",
+         "date": "Spring 2016",
+         "description": "Programmed Blackjack game using object-oriented language (C++) that have multi-players and single-player modes.",
+         "skills": [
+            "Object Oriented Programming",
+            "Linux environment"
+         ]
+      },
+   ],
    "skills":{}
 }
 
