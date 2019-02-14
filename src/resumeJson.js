@@ -19,9 +19,32 @@ const resumeData = {
          "Related coursework: Analog circuit design, C/C++ programming, Operating Systems, Software Engineering, Computer Architecture, Data Structures, Web Development, Microcontrollers, Mobile App Development, Multimedia Systems, System Verilog, Computer Graphics."
       ],
    },
-   "experince": {
-
-   },
+   "experince": [
+      {
+         "position": "Software Developer Intern",
+         "companyName": "Autodesk Inc.",
+         "companyAddress": "Portland, OR. ",
+         "date": "June 2018 – September 2018",
+         "summary": "Contributed to scrum team contributing to the development of HFDM “High Frequency Data Management” C++ SDK. by adding new product features, fixing bugs, testing, and integrating CI/CD tools.",
+         "duties": [
+            "Implemented new functionality to the SDK using.",
+            "Debugged and fix reported bugs in the source code. ",
+            "Added new test cases using Google test framework.",
+            "Integrated CI/CD, such as code coverage tools, to Jenkins pipeline."
+         ]
+      },
+      {
+         "position": "Control Engineering Intern",
+         "companyName": "Peterson Pacific Corp.",
+         "companyAddress": "Eugene, OR.",
+         "date": "September 2017 – June 2018",
+         "summary": "Designed and Integrated volume and weight production rate monitoring systems into a mobile mulch grinder using IQAN software through communication via J1939 protocol.",
+         "duties": [
+            "Implemented the systems control logic and the GUI using IQAN Design Software.",
+            "Analyzed CAN bus network traffic."
+         ]
+      }
+   ],
    "projects": [
       {
          "name": "Crypto Clicker",
