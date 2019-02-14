@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
 import {
   Container,
   Header,
+  Icon
 } from 'semantic-ui-react'
+import resumeJson from '../resumeJson';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -13,7 +15,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Mohammed Algadhib'
+      content={resumeJson.personalInfo.name}
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -24,7 +26,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Seeking an entry-level Software Engineering position to utilize and expand my experience in software engineering.'
+      content={resumeJson.personalInfo.objective}
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -32,6 +34,19 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
+
+    <Container text>
+      <a href={resumeJson.personalInfo.github} style={{color: 'inherit'}} target='_blank' rel='noopener noreferrer'>
+         <Icon size='big' name='github' />
+      </a>
+      <a href={resumeJson.personalInfo.linkedin} style={{color: 'inherit'}} target='_blank' rel='noopener noreferrer'>
+         <Icon size='big' name='linkedin' />
+      </a>
+      <a href={`mailto:${resumeJson.personalInfo.email}`} style={{color: 'inherit'}} target='_blank' rel='noopener noreferrer'>
+         <Icon size='big' name='mail' />
+      </a>
+    </Container>
+
   </Container>
 )
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import { List, Container, Header, Segment } from 'semantic-ui-react';
-import resumeData from '../resumeJson';
+import resumeJson from '../resumeJson';
 
 class EducationCard extends React.Component {
 
    renderMetaList()  {
-      return resumeData.education.meta.map( listItem => <List.Item>{listItem}</List.Item>)
+      return resumeJson.education.meta.map((listItem, itemKey) => <List.Item key={itemKey}>{listItem}</List.Item>);
    }
 
    render () {
@@ -14,16 +14,16 @@ class EducationCard extends React.Component {
             <Segment basic clearing>         
                <Header as='h1' floated='left'>
                   <Header.Content>
-                     {resumeData.education.schoolName}
-                     <Header.Subheader style={{ marginLeft:"1em"}}>{resumeData.education.major}</Header.Subheader>
+                     {resumeJson.education.schoolName}
+                     <Header.Subheader style={{ marginLeft:"1em"}}>{resumeJson.education.major}</Header.Subheader>
                   </Header.Content>
                </Header>
                <Segment floated='right' basic style={{ padding: '1em', margin: '0em'}}>
                   <Header as='h5' disabled style={{ padding: '0em', margin: '0em'}}>
-                     {resumeData.education.gradDate}
+                     {resumeJson.education.gradDate}
                   </Header>
                   <Header as='h5'  disabled style={{ padding: '0em', margin: '0em' }}>
-                     {resumeData.education.GPA}
+                     {resumeJson.education.GPA}
                   </Header>
                </Segment>
             </Segment>
