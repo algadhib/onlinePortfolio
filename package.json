@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://algadhib.github.io/onlinePortfolio",
+  "homepage": "https://algadhib.github.io",
   "dependencies": {
     "ajv": "6.8.1",
     "gh-pages": "^2.0.1",

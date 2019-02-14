@@ -29,8 +29,10 @@ class ExperienceList extends React.Component {
                      </Header>
                   </Segment>
                </Segment>
-               <Container style={{ padding: '0em 2em' }}>
-                  <Container text><strong>Summary: </strong>{experince.summary}</Container>
+               <Container style={{ paddingLeft: '2em' }}>
+                  <Segment basic clearing style={{ padding: '0em', margin: '0em'}}>
+                     <strong>Summary: </strong>{experince.summary}
+                  </Segment>
                   <List bulleted>
                      {experince.duties.map((duty, key)=> <List.Item key={key}>{duty}</List.Item>)}
                   </List>

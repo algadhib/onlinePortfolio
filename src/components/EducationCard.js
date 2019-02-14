@@ -18,7 +18,7 @@ class EducationCard extends React.Component {
                      <Header.Subheader style={{ marginLeft:"1em"}}>{resumeJson.education.major}</Header.Subheader>
                   </Header.Content>
                </Header>
-               <Segment floated='right' basic style={{ padding: '1em', margin: '0em'}}>
+               <Segment floated='right' basic style={{ padding: '1em 0em', margin: '0em'}}>
                   <Header as='h5' disabled style={{ padding: '0em', margin: '0em'}}>
                      {resumeJson.education.gradDate}
                   </Header>
@@ -28,7 +28,7 @@ class EducationCard extends React.Component {
                </Segment>
             </Segment>
             
-            <List bulleted style={{ padding: '0em 2em' }}>
+            <List bulleted style={{ paddingLeft: '2em' }}>
                {this.renderMetaList()}
             </List>
          </Container>
