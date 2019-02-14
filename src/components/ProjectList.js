@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Icon, Image, Item, Label, Segment, Header } from 'semantic-ui-react'
+import { Item, Label, Segment, Header, Container } from 'semantic-ui-react'
 import resumeJson from '../resumeJson';
 
 class ProjectList extends React.Component {
@@ -29,9 +29,11 @@ class ProjectList extends React.Component {
 
   render () { 
     return (  
-      <Item.Group divided>
-        {this.listPropjects()}
-      </Item.Group>
+      <Container text>
+        <Item.Group divided>
+          {this.listPropjects()}
+        </Item.Group>
+      </Container>
     );
   }    
 }

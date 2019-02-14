@@ -18,7 +18,9 @@ class ExperienceList extends React.Component {
                   <Header as='h1' floated='left'>
                      <Header.Content>
                         {experince.position}
-                        <Header.Subheader style={{ marginLeft:"1em"}}>{experince.companyName} | {experince.companyAddress}</Header.Subheader>
+                        <Header.Subheader style={{ marginLeft:"1em"}}>
+                           {experince.companyName} | {experince.companyAddress}
+                        </Header.Subheader>
                      </Header.Content>
                   </Header>
                   <Segment floated='right' basic style={{ padding: '0em', margin: '0em'}}>

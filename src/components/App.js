@@ -1,13 +1,6 @@
 import React from 'react';
 import HomePageLayout from './HomepageLayout';
 
-class App extends React.Component {
-
-   render() {
-      return (
-         <HomePageLayout />
-      );
-   }
-}
+const App = () => <HomePageLayout />
 
 export default App;

@@ -1,20 +1,10 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react';
 import {
-  Button,
   Container,
   Divider,
-  Grid,
-  Header,
   Icon,
-  Image,
-  List,
-  Menu,
-  Responsive,
-  Segment,
-  Sidebar,
-  Visibility,
-} from 'semantic-ui-react'
+  Segment
+} from 'semantic-ui-react';
 import ResponsiveContainer from './ResponsiveContainer';
 import ProjectList from './ProjectList';
 import EducationCard from './EducationCard';
@@ -24,56 +14,54 @@ const HomepageLayout = () => (
   <ResponsiveContainer>
 
     <Divider
-          as='h2'
-          className='header'
-          horizontal
-          style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-        >
-          <Icon name='suitcase'/>
-          Experience
+      as='h2'
+      className='header'
+      horizontal
+      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
+    >
+      <Icon name='suitcase'/>
+      Experience
     </Divider>
 
-    <Container style={{ padding: '8em 0em' }} vertical>
+    <Container style={{ padding: '8em 0em' }}>
       <Container text>
         <ExperienceList />
       </Container>
     </Container>
 
     <Divider
-          as='h2'
-          className='header'
-          horizontal
-          style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-        >
-          <Icon name='graduation'/>
-          Education
+      as='h2'
+      className='header'
+      horizontal
+      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
+      >
+        <Icon name='graduation'/>
+        Education
     </Divider>
 
-    <Container style={{ padding: '8em 0em' }} vertical>
+    <Container style={{ padding: '8em 0em' }}>
       <Container text>
         <EducationCard />
       </Container>
     </Container>
 
     <Divider
-          as='h2'
-          className='header'
-          horizontal
-          style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-        >
-        <Icon name='lightbulb outline'/>
-          Projects
+      as='h2'
+      className='header'
+      horizontal
+      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
+    >
+      <Icon name='lightbulb outline'/>
+      Projects
     </Divider>
 
-    <Container style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <ProjectList />
-      </Container>
+    <Container style={{ padding: '8em 0em' }}>
+      <ProjectList />
     </Container>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
-        <Grid divided inverted stackable>
+        {/* <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
               <Header inverted as='h4' content='About' />
@@ -102,11 +90,11 @@ const HomepageLayout = () => (
               </p>
             </Grid.Column>
           </Grid.Row>
-        </Grid>
+        </Grid> */}
       </Container>
     </Segment>
 
   </ResponsiveContainer>
 )
 
-export default HomepageLayout
+export default HomepageLayout;

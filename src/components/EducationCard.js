@@ -36,4 +36,4 @@ class EducationCard extends React.Component {
    }
 }
 
-export default EducationCard
+export default EducationCard;
