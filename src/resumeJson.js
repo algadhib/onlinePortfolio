@@ -84,7 +84,23 @@ const resumeData = {
          ]
       },
    ],
-   "skills":{}
+   "skills":[
+      {
+         "skillHeader": "Programming",
+         "skillList": [ "C/C++", "JavaScript", "Bash shell scripting", "Java", "AVR C", "AVR Assembly", "Python", "OpenGL"]
+      },
+      {
+         "skillHeader": "Web Development",
+         "skillList": [ "nodeJs", "React", "Redux", "Express"]},
+      {
+         "skillHeader": "CI/CD",
+         "skillList": [ "Google test", "Junit testing", "Jenkins", "Docker"]
+      },
+      {
+         "skillHeader": "Data Analysis/Simulation",
+         "skillList": [ "MATLAB", "LTspice"]
+      }
+   ]
 }
 
 export default resumeData;

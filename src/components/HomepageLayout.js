@@ -9,6 +9,7 @@ import ResponsiveContainer from './ResponsiveContainer';
 import ProjectList from './ProjectList';
 import EducationCard from './EducationCard';
 import ExperienceList from './ExperianceList';
+import SkillList from './SkillList';
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
@@ -26,6 +27,22 @@ const HomepageLayout = () => (
     <Container style={{ padding: '8em 0em' }}>
       <Container text>
         <ExperienceList />
+      </Container>
+    </Container>
+
+    <Divider
+      as='h2'
+      className='header'
+      horizontal
+      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
+    >
+      <Icon name='code'/>
+      Software Skills
+    </Divider>
+
+    <Container style={{ padding: '8em 0em' }}>
+      <Container text>
+        <SkillList />
       </Container>
     </Container>
 
