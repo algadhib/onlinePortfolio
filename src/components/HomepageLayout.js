@@ -11,69 +11,45 @@ import EducationCard from './EducationCard';
 import ExperienceList from './ExperianceList';
 import SkillList from './SkillList';
 
-const HomepageLayout = () => (
-  <ResponsiveContainer>
-
-    <Divider
+const DividerLine = props => (
+  <Divider
       as='h2'
       className='header'
       horizontal
       style={{ margin: '1em 0em', textTransform: 'uppercase' }}
     >
-      <Icon name='suitcase'/>
-      Experience
+      <Icon name={props.iconName}/>
+      {props.title}
     </Divider>
+);
 
-    <Container style={{ padding: '8em 0em' }}>
+const HomepageLayout = () => (
+  <ResponsiveContainer>
+
+    <DividerLine iconName='suitcase' title='Experience' />
+    <Container style={{ padding: '4em 0em' }}>
       <Container text>
         <ExperienceList />
       </Container>
     </Container>
 
-    <Divider
-      as='h2'
-      className='header'
-      horizontal
-      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-    >
-      <Icon name='code'/>
-      Software Skills
-    </Divider>
-
-    <Container style={{ padding: '8em 0em' }}>
-      <Container text>
-        <SkillList />
-      </Container>
-    </Container>
-
-    <Divider
-      as='h2'
-      className='header'
-      horizontal
-      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-      >
-        <Icon name='graduation'/>
-        Education
-    </Divider>
-
-    <Container style={{ padding: '8em 0em' }}>
+    <DividerLine iconName='graduation' title='Education' />
+    <Container style={{ padding: '4em 0em' }}>
       <Container text>
         <EducationCard />
       </Container>
     </Container>
 
-    <Divider
-      as='h2'
-      className='header'
-      horizontal
-      style={{ margin: '1em 0em', textTransform: 'uppercase' }}
-    >
-      <Icon name='lightbulb outline'/>
-      Projects
-    </Divider>
-
-    <Container style={{ padding: '8em 0em' }}>
+    <DividerLine iconName='lightbulb outline' title='Projects' />
+    <Container style={{ padding: '4em 0em' }}>
       <ProjectList />
+    </Container>
+
+    <DividerLine iconName='code' title='Software Skills' />
+    <Container style={{ padding: '4em 0em' }}>
+      <Container text>
+        <SkillList />
+      </Container>
     </Container>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>

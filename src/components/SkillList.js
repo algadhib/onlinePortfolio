@@ -13,7 +13,7 @@ class SkillList extends React.Component {
                <Item key={key}>
                   <Item.Content>
                      <Item.Header>{skillItem.skillHeader}</Item.Header>
-                     <Item.Extra>
+                     <Item.Extra style={{ padding: '0em 1em' }}>
                         {skillItem.skillList.map((skill, key) => <Label key={key}>{skill}</Label>)}
                      </Item.Extra>
                   </Item.Content>

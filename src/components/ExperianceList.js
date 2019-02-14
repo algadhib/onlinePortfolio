@@ -14,7 +14,7 @@ class ExperienceList extends React.Component {
       return resumeJson.experince.map((experince, key) => {
          return (
             <Container key={key}>   
-               <Segment basic clearing>         
+               <Segment basic clearing style={{ margin: '2em 0em 0em 0em' }}>         
                   <Header as='h1' floated='left'>
                      <Header.Content>
                         {experince.position}
@@ -29,10 +29,12 @@ class ExperienceList extends React.Component {
                      </Header>
                   </Segment>
                </Segment>
-               <Container text><strong>Summary: </strong>{experince.summary}</Container>
-               <List bulleted>
-                  {experince.duties.map((duty, key)=> <List.Item key={key}>{duty}</List.Item>)}
-               </List>
+               <Container style={{ padding: '0em 2em' }}>
+                  <Container text><strong>Summary: </strong>{experince.summary}</Container>
+                  <List bulleted>
+                     {experince.duties.map((duty, key)=> <List.Item key={key}>{duty}</List.Item>)}
+                  </List>
+               </Container>
                {this.renderDivider(key)}
             </Container>
          )

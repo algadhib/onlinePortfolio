@@ -17,10 +17,10 @@ class ProjectList extends React.Component {
                 </Header>
               </Segment>
             </Segment>
-            <Item.Description>{project.description}</Item.Description>
-            <Item.Extra>
-              {project.skills.map((skill, key) => <Label key={key}>{skill}</Label>)}
-            </Item.Extra>
+              <Item.Description style={{ padding: '0em 2em' }}>{project.description}</Item.Description>
+              <Item.Extra style={{ padding: '0em 2em' }}>
+                {project.skills.map((skill, key) => <Label key={key}>{skill}</Label>)}
+              </Item.Extra>
           </Item.Content>
         </Item>
       )

@@ -27,8 +27,8 @@ class EducationCard extends React.Component {
                   </Header>
                </Segment>
             </Segment>
-
-            <List bulleted>
+            
+            <List bulleted style={{ padding: '0em 2em' }}>
                {this.renderMetaList()}
             </List>
          </Container>
