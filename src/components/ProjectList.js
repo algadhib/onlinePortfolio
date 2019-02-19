@@ -1,8 +1,21 @@
 import React from 'react'
-import { Item, Label, Segment, Header, Container } from 'semantic-ui-react'
+import { Item, Label, Segment, Header, Container, Icon, Button } from 'semantic-ui-react'
 import resumeJson from '../resumeJson';
 
 class ProjectList extends React.Component {
+
+  renderGitHubPage(githubLink)  {
+    if(githubLink) {
+      return (
+        <Button href={githubLink} animated='vertical' floated='right'>
+          <Button.Content hidden>Open in Github</Button.Content>
+          <Button.Content visible>
+            <Icon size='big' name='github' />
+          </Button.Content> 
+        </Button>
+      );
+    }
+  }
 
   listPropjects() {
     return resumeJson.projects.map((project, key) => {
@@ -17,9 +30,12 @@ class ProjectList extends React.Component {
                 </Header>
               </Segment>
             </Segment>
-              <Item.Description style={{ padding: '0em 2em' }}>{project.description}</Item.Description>
+              <Item.Description style={{ padding: '0em 2em' }}>
+                {project.description}
+              </Item.Description>
               <Item.Extra style={{ padding: '0em 2em' }}>
                 {project.skills.map((skill, key) => <Label key={key}>{skill}</Label>)}
+                {this.renderGitHubPage(project.githubLink)}                
               </Item.Extra>
           </Item.Content>
         </Item>

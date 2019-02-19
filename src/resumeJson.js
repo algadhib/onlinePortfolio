@@ -47,13 +47,25 @@ const resumeData = {
    ],
    "projects": [
       {
+         "name": "Online Portfolio",
+         "date": "Winter 2019",
+         "description": "Implemented an online resume page that parses the resume data from a json object and render it as a web page using React and Semantic-ui.",
+         "skills": [
+            "React",
+            "JavaScript",
+            "NodeJS"
+         ],
+         "githubLink":"https://github.com/algadhib/onlinePortfolio"
+      },
+      {
          "name": "Crypto Clicker",
          "date": "Winter 2018",
          "description": "Collaborated in the design and implementation of a clicker game that utilize Coinbase API to get real time crypto currency exchange rates to enable the player to invest in virtual money.",
          "skills": [
             "Java",
             "Android Studio"
-         ]
+         ],
+         "githubLink":"https://github.com/algadhib/final-project-crypto-clicker"
       },
       {
          "name": "Atmega128 FM Clock Radio",
@@ -62,7 +74,8 @@ const resumeData = {
          "skills": [
             "Empidid systems programming",
             "microcontroller communication"
-         ]
+         ],
+         "githubLink":""
       },
       {
          "name": "\"Game\"",
@@ -72,7 +85,8 @@ const resumeData = {
             "JavaScript",
             "NodeJS",
             "web development"
-         ]
+         ],
+         "githubLink":"https://github.com/algadhib/Game"
       },
       {
          "name": "Blackjack",
@@ -81,7 +95,8 @@ const resumeData = {
          "skills": [
             "Object Oriented Programming",
             "Linux environment"
-         ]
+         ],
+         "githubLink":""
       },
    ],
    "skills":[
