@@ -1,7 +1,7 @@
 const resumeData = {
    "personalInfo": {
       "name": "Mohammed Algadhib",
-      "objective": "Seeking an entry-level Software Engineering position to utilize and expand my experience in software engineering.",
+      "objective": "Motivated Software Engineer with experience in developing desktop and embedded applications using C and C++.",
       "linkedin": "https://www.linkedin.com/in/algadhim/",
       "github": "https://github.com/algadhib",
       "email": "algadhib.mohammed@gmail.com",
@@ -20,6 +20,18 @@ const resumeData = {
       ],
    },
    "experince": [
+      {
+         "position": "Software Engineer",
+         "companyName": "On Semiconductor",
+         "companyAddress": "Beaverton, OR. ",
+         "date": "March 2018 – Current",
+         "summary": "Collaborated in the development of Strata Developer Studio. Strata Developer Studio is a cloud-connected desktop application that provides seamless environment for engineers to design and evaluate with ON Semiconductor technologies.",
+         "duties": [
+            "Designed, tested, and maintained backend services and libraries in C/C++.",
+            "Reduced the time required for new developers to set up their computer to only one hour by automating the process of downloading, installing and configuring the required tools.",
+            "Developed and maintained embedded firmware libraries."
+         ]
+      },
       {
          "position": "Software Developer Intern",
          "companyName": "Autodesk Inc.",
@@ -72,7 +84,7 @@ const resumeData = {
          "date": "Fall 2017",
          "description": "Programmed and built FM clock radio using Atmega128 development board and FM radio chip that uses encoders, buttons, 7-segment display, and LCD screen as a user interface.",
          "skills": [
-            "Empidid systems programming",
+            "Embedded systems programming",
             "microcontroller communication"
          ],
          "githubLink":""
